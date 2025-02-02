@@ -1,0 +1,33 @@
+Overview
+
+This script uses Selenium WebDriver to automate testing of the Table Sort and Search Demo on LambdaTest. It performs the following steps:
+
+Opens the web page: Table Sort and Search Demo.
+
+Locates and interacts with the search box to search for "New York".
+
+Validates that the search results display 5 entries out of 24 total entries.
+
+Prints test results and closes the browser.
+
+
+Selenium library for Python
+
+Setup Instructions
+
+Install Selenium:
+
+pip install selenium
+
+
+Run the script:
+
+python -v -s  searchfunction.py.py
+
+Notes
+
+The script includes a small delay (time.sleep(2)) to ensure the table updates before validation.
+
+The script uses Xpath selectors to locate the search box and table rows.
+
+If the test fails, the assertion error message will indicate the number of results found.
